@@ -25,7 +25,7 @@
     <li>斜め強調？（&lt;em&gt;～&lt;/em&gt;）、太字強調（&lt;strong&gt;～&lt;/strong&gt;）※あくまで強調するだけの要素なので細かい設定はcssで！</li>
     <li>
       上記の"クソコンテンツ一覧(h2)"や本見出し(h3)のコンテンツをlist関数で示した。<br>
-      （リスト(子)：&lt;list&gt;要素&lt;/list&gt;、順不同<strong>u</strong>norder <strong>l</strong>ist(親)：&lt;ul&gt;リスト要素&lt;ul&gt;、
+      （リスト(子)：&lt;li&gt;要素&lt;/li&gt;、順不同<strong>u</strong>norder <strong>l</strong>ist(親)：&lt;ul&gt;リスト要素&lt;ul&gt;、
       番号順<strong>o</strong>rder <strong>l</strong>ist(親)：&lt;ol&gt;リスト要素&lt;ol&gt;）
     </li>
       <ul>
@@ -35,7 +35,7 @@
     <li>
       用語説明型リストの学習（用途：用語集、よくある質問、会社概要、お問い合わせ内容など）<br>
       （用語リスト作成dl(親)：&lt;dl&gt;用語リスト&lt;/dl&gt;、用語dt(子)：&lt;dt&gt;用語&lt;/dt&gt;、用語説明dd(子)：&lt;dd&gt;説明&lt;/dd&gt;）↓練習
-    </list>
+    </li>
       <dl>
         <dt>Q.ゴーストタッチのようなハンデスが許せません。ドロマーハンデス使いは陰キャですよね?</dt>
         <dd>A.手札無くて草</dd>
@@ -44,14 +44,32 @@
         <dd>A.そり</dd>
       </dl>
   
-    <list>アンカータグ（&lt;a&gt;～&lt;/a&gt;）を用いたハイパーリンク(href="")の作成。新規タブへジャンプする（target="_blank"）を用いて参考資料に適用</list>
-    <list>ページ内の特定の場所へリンクするid属性について学習（&lt;a href="#リンク先に指定した固有の名前"&gt;アンカーテキスト&lt;/a&gt;）</list>
+    <li>アンカータグ（&lt;a&gt;～&lt;/a&gt;）を用いたハイパーリンク(href="")の作成。新規タブへジャンプする（target="_blank"）を用いて参考資料に適用</li>
+    <li>ページ内の特定の場所へリンクするid属性について学習（&lt;a href="#リンク先に指定した固有の名前"&gt;アンカーテキスト&lt;/a&gt;）</li>
+    <li>
+      a要素は親の要素に依存するため、例えば&lt;div&gt;（中の要素をグループ化する）のようなフローコンテンツ（body要素内ならどこでも配置できるもの）で囲めば、<br>
+      内部の子要素にフローコンテンツを配置できる。
+    </li>
   </ol>
   <h4>参考資料</h4>
   <p>
   <a href="https://creatorquest.jp/lessons/html/" target="_blank">(1) HTML入門</a><br>
   <a href="https://www.sejuku.net/blog/112806" target="_blank">(2) SAMURAI ENGINEER</a><br>
   </p>
+  
+  <div>
+    <a href="https://www.youtube.com/watch?v=2Mm0EQojzW4" target="_blank">
+    <h5>滑るギャグ</h5>
+    <p>～div要素を試したいがために構成された悲しき見出し～</p>
+    </a>
+  </div>
+  <dl>
+    <dt>改行の要素を見て一言</dt>
+    <dd>brであーるｗｗｗｗｗｗ</dd>
+    
+    <dt>斜体強調の要素を見て一言</dt>
+    <dd>ケツ<em>em</em>e</dd>
+  </dl>
   
   <p>&copy; 2021 HTMLを構築中なのら（どうでもいい書き溜め） All Rights Reserve.</p>
 </body>
