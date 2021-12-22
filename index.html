@@ -5,26 +5,31 @@
   <title>Untitle html practice</title>
 </head>
 <body>
-  <h1><em>HTMLを構築中なのら</em></h1>
+  <h1><em>ページ構築中</em></h1>
   <p>
-    JS勉強しなきゃなぁ…と思っている私です。<br>
-    <em>HTML</em>の特殊記述などの初歩的な練習してます(1)。<br>
-    しょうもない学習成果は<a href="#gakusyu">コチラ</a>
+    勉強中です。Cはある程度理解度アリ<br>
+    <em>HTML</em><sup>(1)</sup>や<em>Java</em><sub>(2)</sub>の初歩的な練習してます。<br>
+    学習成果は適宜記述中!!（↑の上付き文字は参考資料の番号です。）
   </p>
-  <h2>クソコンテンツ一覧</h2>
+  
+  <h2>ページ内一覧</h2>
   <ul>
-    <li>while文の無限ループとめらんねぇ！！</li>
-    <li>Doctype宣言いる？</li>
-    <li><strong>くじ（䦰）</strong>の文字がどうあがいてもつぶれる件</li>
-    <li><em>Reynolds equation</em>は神</li>
+    <li><a href="#htmlgaku"><em>HTML</em>の学習成果</a></li>
+    <li><a href="#javagaku"><em>Java</em>の学習成果</a></li>
+    <li><a href="#free">自由枠（他に気になった言語も追加するかも…）</a></li>
+    <li><a href="#ref">参考資料</a></li>
   </ul>
-  <h3 id="gakusyu">学習成果</h3>
+  
+  <h3 id="htmlgaku">1. <em>HTML</em>の学習成果</h3>
   <ol>
-    <li>初歩用語：マークアップ→文章を構造化する作業、コーディング→ソースコード全体を記述する作業(2)らしい</li>
-    <li>特殊記述の"&lt;", "&gt;", "&lt;br&gt;(改行)"の記述方法を取得！</li>
-    <li>斜め強調？（&lt;em&gt;～&lt;/em&gt;）、太字強調（&lt;strong&gt;～&lt;/strong&gt;）※あくまで強調するだけの要素なので細かい設定はcssで！</li>
+    <li>初歩用語：マークアップ→文章を構造化する作業、コーディング→ソースコード全体を記述する作業<sup>(3)</sup>とのこと</li>
+    <li>特殊記述の"&lt;"=&amp;lt;, "&gt;"=&amp;gt;, "&lt;br&gt;(改行)"の記述方法を学習</li>
     <li>
-      上記の"クソコンテンツ一覧(h2)"や本見出し(h3)のコンテンツをlist関数で示した。<br>
+      <em>斜め強調</em>（&lt;em&gt;～&lt;/em&gt;）、<b>太字</b>(&lt;b&gt;～&lt;/b&gt;)、<strong>強調</strong>（&lt;strong&gt;～&lt;/strong&gt;）
+      ※あくまで強調するだけの要素なので細かい設定はcssで！
+    </li>
+    <li>
+      上記の"ページ内一覧(h2)"や本見出し(h3)のコンテンツをlist関数で示した。<br>
       （リスト(子)：&lt;li&gt;要素&lt;/li&gt;、順不同<strong>u</strong>norder <strong>l</strong>ist(親)：&lt;ul&gt;リスト要素&lt;ul&gt;、
       番号順<strong>o</strong>rder <strong>l</strong>ist(親)：&lt;ol&gt;リスト要素&lt;ol&gt;）
     </li>
@@ -37,11 +42,13 @@
       （用語リスト作成dl(親)：&lt;dl&gt;用語リスト&lt;/dl&gt;、用語dt(子)：&lt;dt&gt;用語&lt;/dt&gt;、用語説明dd(子)：&lt;dd&gt;説明&lt;/dd&gt;）↓練習
     </li>
       <dl>
-        <dt>Q.ゴーストタッチのようなハンデスが許せません。ドロマーハンデス使いは陰キャですよね?</dt>
-        <dd>A.手札無くて草</dd>
+        <dt>Q.読み物でたいして長く記述していないのに、だらだら多くページを作成してるサイトが許せません！</dt>
+        <dd>A.Twitterの<a href="https://twitter.com/1pagemen/">ワンページマン</a>さんが運営しておられる<br>
+          <a href="https://onepemen.com/">「次へ」を斬る！</a>では長い記事を1ページにまとめられています。</dd>
         
-        <dt>Q.デュエプレの修正前ブリザード強すぎわろろんぬ</dt>
-        <dd>A.そり</dd>
+        <dt>Q.vscodeでJava実行したときに"このシステムではスクリプトの実行が無効になっているため～"って出るんだけど、どうすればいいの？</dt>
+        <dd>A.このサイトを参考にしていただけるといいと思います。<br>
+          どうやらWindows Powershellのセキュリティーポリシーを変更しないとエラー吐くので、Javaのsettingをいじる必要があるようです。</dd>
       </dl>
   
     <li>アンカータグ（&lt;a&gt;～&lt;/a&gt;）を用いたハイパーリンク(href="")の作成。新規タブへジャンプする（target="_blank"）を用いて参考資料に適用</li>
@@ -51,26 +58,25 @@
       内部の子要素にフローコンテンツを配置できる。
     </li>
   </ol>
-  <h4>参考資料</h4>
+  
+  <h4 id="javagaku">2. <em>Java</em>の学習成果</h4>
   <p>
-  <a href="https://creatorquest.jp/lessons/html/" target="_blank">(1) HTML入門</a><br>
-  <a href="https://www.sejuku.net/blog/112806" target="_blank">(2) SAMURAI ENGINEER</a><br>
+    ～
   </p>
   
-  <div>
-    <a href="https://www.youtube.com/watch?v=2Mm0EQojzW4" target="_blank">
-    <h5>滑るギャグ</h5>
-    <p>～div要素を試したいがために構成された悲しき見出し～</p>
-    </a>
-  </div>
-  <dl>
-    <dt>改行の要素を見て一言</dt>
-    <dd>brであーるｗｗｗｗｗｗ</dd>
+  <h5>3. 自由枠（何かの学習枠）</h5>
+  <p>
+    まだ何を追加するかは決まっていません…(;_;)<br>
+    おそらく、<em>JavaScript</em>か<em>css</em>にすると思います。
+  </p>
     
-    <dt>斜体強調の要素を見て一言</dt>
-    <dd>ケツ<em>em</em>e</dd>
-  </dl>
-  
-  <p>&copy; 2021 HTMLを構築中なのら（どうでもいい書き溜め） All Rights Reserve.</p>
+  <h6>4. 参考資料</h6>
+  <p>
+    <a href="https://creatorquest.jp/lessons/html/" target="_blank">(1) HTML入門</a><br>
+    <a href="https://www.sejuku.net/blog/112806" target="_blank">(2) Java入門</a><br>
+    <a href="https://www.sejuku.net/blog/112806" target="_blank">(3) SAMURAI ENGINEER</a><br>
+  </p>
+ 
+  <p>&copy; 2021 ページ構築中 All Rights Reserve.</p>
 </body>
 </html>
